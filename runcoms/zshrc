@@ -12,3 +12,22 @@ fi
 
 # Customize to your needs...
 
+# My paths
+export PATH=/Users/daha1836/src/boris/bin:/Users/daha1836/.emacs.d/site-lisp/emms/src:~/src/drush:/usr/local/MacGPG2/bin:/usr/local/opt/openssl/bin:/usr/local/opt/php54/bin:/usr/local/sbin:/Users/daha1836/.emacs.d/site-lisp/carton/bin:/Users/daha1836/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:~/git-scripts:~/.cabal/bin:/usr/local/share/npm/bin
+
+# My aliases
+alias lr='ls -altr'
+alias emacsclient=/usr/local/bin/emacsclient
+alias emacs2='/Applications/Emacs.app/Contents/MacOS/Emacs &'
+alias emacs3='/Applications/Emacs.app/Contents/MacOS/Emacs --debug-init &'
+
+# My env
+export TERM=xterm-256color
+export HISTSIZE=100000 SAVEHIST=100000 HISTFILE=~/.zhistory
+export DSLM_BASE=~/data/code/dslm_base/
+
+fpath=(~/drush_zsh/zsh $fpath)
+autoload -U compinit
+compinit -i
+
+alias bower='noglob bower'
