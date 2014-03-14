@@ -13,7 +13,7 @@ fi
 # Customize to your needs...
 
 # My paths
-export PATH=/Users/daha1836/src/boris/bin:/Users/daha1836/.emacs.d/site-lisp/emms/src:~/src/drush:/usr/local/MacGPG2/bin:/usr/local/opt/openssl/bin:/usr/local/opt/php54/bin:/usr/local/sbin:/Users/daha1836/.emacs.d/site-lisp/carton/bin:/Users/daha1836/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:~/git-scripts:~/.cabal/bin:/usr/local/share/npm/bin
+export PATH=~/.composer/vendor/bin:/Users/daha1836/src/boris/bin:/Users/daha1836/.emacs.d/site-lisp/emms/src:~/src/drush:/usr/local/MacGPG2/bin:/usr/local/opt/openssl/bin:/usr/local/opt/php54/bin:/usr/local/sbin:/Users/daha1836/.emacs.d/site-lisp/carton/bin:/Users/daha1836/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:~/git-scripts:~/.cabal/bin:/usr/local/share/npm/bin
 
 # My aliases
 alias lr='ls -altr'
@@ -31,3 +31,17 @@ autoload -U compinit
 compinit -i
 
 alias bower='noglob bower'
+
+cdpath=(~/.emacs.d ~/data/releases)
+
+export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH
+
+export prod1=wweb1.int.colorado.edu
+export prod2=wweb2.int.colorado.edu
+export prod3=wweb3.int.colorado.edu
+export prod4=wweb4.int.colorado.edu
+export test1=wwebtest1.int.colorado.edu
+export test2=wwebtest2.int.colorado.edu
+export dev1=wwebdev1.int.colorado.edu
+export dev2=wwebdev2.int.colorado.edu
+export stage=wstage1.colorado.edu
