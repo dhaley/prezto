@@ -1,10 +1,3 @@
-#
-# Executes commands at the start of an interactive session.
-#
-# Authors:
-#   Sorin Ionescu <sorin.ionescu@gmail.com>
-#
-
 # Source Prezto.
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
@@ -12,14 +5,14 @@ fi
 
 # Customize to your needs...
 
-# My paths
-export PATH=~/.composer/vendor/bin:/Users/daha1836/src/boris/bin:/Users/daha1836/.emacs.d/site-lisp/emms/src:~/src/drush:/usr/local/MacGPG2/bin:/usr/local/opt/openssl/bin:/usr/local/opt/php54/bin:/usr/local/sbin:/Users/daha1836/.emacs.d/site-lisp/carton/bin:/Users/daha1836/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:~/git-scripts:~/.cabal/bin:/usr/local/share/npm/bin
+PATH=~/.composer/vendor/bin:~/src/boris/bin:~/.emacs.d/site-lisp/emms/src:~/src/drush:/usr/local/MacGPG2/bin:/usr/local/opt/php54/bin:/usr/local/opt/openssl/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin:/usr/X11/bin:~/bin:~/.cabal/bin:/usr/local/share/npm/bin:~/.emacs.d/site-lisp/osx-dictionary:/Applications/git-annex.app/Contents/MacOS
 
 # My aliases
 alias lr='ls -altr'
 alias emacsclient=/usr/local/bin/emacsclient
 alias emacs2='/Applications/Emacs.app/Contents/MacOS/Emacs &'
 alias emacs3='/Applications/Emacs.app/Contents/MacOS/Emacs --debug-init &'
+alias gcb="git add . && git commit -m '$(date +'%a, %d %b %Y')'"
 
 # My env
 export TERM=xterm-256color
@@ -45,3 +38,5 @@ export test2=wwebtest2.int.colorado.edu
 export dev1=wwebdev1.int.colorado.edu
 export dev2=wwebdev2.int.colorado.edu
 export stage=wstage1.colorado.edu
+
+fpath=(~/.zsh $fpath)
